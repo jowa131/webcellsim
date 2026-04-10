@@ -51,7 +51,7 @@ self.onmessage = (e: MessageEvent<ComputeRequest>) => {
 
   const result: ComputeResult = { type: 'RESULT', id, rsrp }
   // Transfer the underlying buffer to avoid copying
-  self.postMessage(result, [result.rsrp.buffer])
+  self.postMessage(result, { transfer: [result.rsrp.buffer] })
 }
 
 bootstrap()
