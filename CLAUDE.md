@@ -1,4 +1,14 @@
-# webcellsim Core Identity
-- 이 프로젝트는 브라우저(100% Client-side)에서 동작하는 iBwave 스타일의 셀룰러 플래닝 툴입니다.
-- E2E 테스트를 금지하고 로컬 단위 테스트만 진행합니다.
-- 코드를 수정할 때는 전체 파일을 재작성하지 말고, 타겟팅된 수정(sed 등)이나 툴의 내부 편집 기능을 사용하세요.
+# webcellsim — Agent Context
+
+Read `~/projects/.antigravityrules` for common agent roles and global workflow.
+Read `.antigravityrules` in this directory for webcellsim-specific agent roles.
+Read `SKILL.md` for tech stack, architecture, and component guide.
+
+---
+
+# Core Identity
+
+Browser-only (100% client-side) iBwave-style cellular planning tool.
+- No server-side code.
+- No E2E tests — local unit tests only.
+- Code changes: targeted edits only. Never rewrite entire files.

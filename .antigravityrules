@@ -1,0 +1,25 @@
+# .antigravityrules — webcellsim Agent Roles
+
+## [Agent Roles]
+
+### developer agent (webcellsim)
+Implements browser-side cellular planning features.
+- All logic runs client-side. No server-side code.
+- Targeted edits only — never rewrite entire files.
+- No E2E tests; write local unit tests only.
+
+### wasm engineer
+Develops the Rust/WASM computation engine.
+- Skill: `/wasm-core`
+- Computes 3.5GHz path loss and RSRP calculations.
+- Output is WASM binary consumed by Web Worker.
+
+### canvas engineer
+Implements HTML5 Canvas rendering for floor plan and RSRP heatmap.
+- Skill: `/canvas-ui`
+- Receives computation data from WASM engine via Web Worker messages.
+
+### git manager (webcellsim)
+Commits milestones and maintains `plan.md`.
+- Skill: `/git-manager`
+- Called after each completed development phase.
