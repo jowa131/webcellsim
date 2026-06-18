@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "wasm:build": "cd wasm-engine && wasm-pack build --target web --out-dir ../src/wasm"
+    "wasm:build": "wasm-pack build wasm-engine --target web --out-dir ../src/wasm"
   },
   "devDependencies": {
     "typescript": "^5.3.3",

@@ -68,7 +68,7 @@ webcellsim/
 
 ## Operating Environment
 
-- Host OS: Windows 11 + WSL2 (Ubuntu)
+- Host OS: Windows 11 native development environment
 - Runtime: Browser-only (100% client-side, no server)
 - Node.js: for build tooling only (Vite)
 - Rust toolchain: required for WASM compilation (`wasm-pack`)
